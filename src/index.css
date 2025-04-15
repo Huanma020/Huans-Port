@@ -183,3 +183,94 @@ main {
     flex-direction: column;
   }
 }
+
+.form-group {
+  margin-bottom: 1.2rem;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: rgba(255, 255, 255, 0.8);
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #0078d4;
+  box-shadow: 0 0 5px #0078d4aa;
+}
+
+button[type="submit"] {
+  background: #0078d4;
+  color: white;
+  font-weight: bold;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button[type="submit"]:hover {
+  background: #005fa3;
+}
+
+.job {
+  margin-bottom: 2rem;
+}
+
+.job h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+}
+
+.job-company {
+  font-weight: 600;
+  color: var(--link-color);
+}
+
+.job-duration {
+  display: block;
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 0.8rem;
+}
+
+.job ul {
+  margin: 0;
+  padding-left: 1.5rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.job li {
+  margin-bottom: 0.5rem;
+}
+
+/* Optional: simple fade-in animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.job-desc {
+  font-style: italic;
+  margin-bottom: 0.8rem;
+  color: #666;
+}
+.job-company {
+  font-weight: 600;
+  color: var(--link-color);
+}
